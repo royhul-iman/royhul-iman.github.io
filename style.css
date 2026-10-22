@@ -747,8 +747,7 @@ footer {
 ================================= */
 
 @media (max-width: 850px) {
-    nav {
-        display: none;
+    
     }
 
     .hero {
@@ -862,5 +861,26 @@ footer {
     .circle-two {
         width: 320px;
         height: 320px;
+    }
+} 
+/* MENU RESPONSIF UNTUK HP */
+@media (max-width: 850px) {
+    .nav-content {
+        flex-wrap: wrap;
+        padding: 12px 0;
+        gap: 12px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    nav a {
+        padding: 8px;
+        font-size: 13px;
     }
 }
