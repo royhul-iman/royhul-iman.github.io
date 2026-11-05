@@ -369,3 +369,42 @@ footer {
         gap: 35px;
     }
 }
+@media (max-width: 480px) {
+    .navbar {
+        justify-content: center;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .nav-menu {
+        gap: 12px;
+    }
+
+    .nav-menu a {
+        font-size: 11px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .section-heading h2,
+    .about-content h2 {
+        font-size: 27px;
+    }
+
+    .stats {
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .stats h3 {
+        font-size: 22px;
+    }
+}
