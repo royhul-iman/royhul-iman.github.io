@@ -15,15 +15,12 @@ body {
 
 /* NAVBAR */
 header {
-    /* NAVBAR TIDAK TRANSPARAN */
-header {
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
     background-color: #173b35;
-}
     background: rgba(16, 42, 38, 0.85);
     backdrop-filter: blur(10px);
 }
