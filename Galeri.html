@@ -10,7 +10,7 @@
    <link rel="stylesheet" href="galeri.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-
+    
 <body>
 
 <!-- HEADER -->
@@ -168,6 +168,120 @@
     <p>Explore the World, Discover the Beauty.</p>
     <p>© 2026 ROYHUL Explore Indonesia & Japan.</p>
 </footer>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+
+    <button class="lightbox-close" id="closeLightbox">
+        &times;
+    </button>
+
+    <button class="lightbox-prev" id="prevImage">
+        &#10094;
+    </button>
+
+    <img src="" id="lightboxImage" alt="Foto wisata">
+
+    <button class="lightbox-next" id="nextImage">
+        &#10095;
+    </button>
+
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+
+</div>
+
+
+// AMBIL ELEMEN LIGHTBOX
+const lightbox = document.getElementById("lightbox");
+const lightboxImage = document.getElementById("lightboxImage");
+const lightboxCaption = document.getElementById("lightboxCaption");
+
+const closeButton = document.getElementById("closeLightbox");
+const prevButton = document.getElementById("prevImage");
+const nextButton = document.getElementById("nextImage");
+
+// AMBIL SEMUA GAMBAR GALERI
+const galleryImages = document.querySelectorAll(".gallery-item img");
+
+let currentIndex = 0;
+
+// BUKA LIGHTBOX
+function openLightbox(index) {
+    currentIndex = index;
+
+    const selectedImage = galleryImages[currentIndex];
+
+    lightboxImage.src = selectedImage.src;
+    lightboxCaption.textContent = selectedImage.alt;
+
+    lightbox.classList.add("active");
+    document.body.style.overflow = "hidden";
+}
+
+// TUTUP LIGHTBOX
+function closeLightbox() {
+    lightbox.classList.remove("active");
+    document.body.style.overflow = "";
+}
+
+// GAMBAR BERIKUTNYA
+function nextImage() {
+    currentIndex++;
+
+    if (currentIndex >= galleryImages.length) {
+        currentIndex = 0;
+    }
+
+    openLightbox(currentIndex);
+}
+
+// GAMBAR SEBELUMNYA
+function prevImage() {
+    currentIndex--;
+
+    if (currentIndex < 0) {
+        currentIndex = galleryImages.length - 1;
+    }
+
+    openLightbox(currentIndex);
+}
+
+// KLIK GAMBAR GALERI
+galleryImages.forEach((image, index) => {
+    image.addEventListener("click", () => {
+        openLightbox(index);
+    });
+});
+
+// EVENT TOMBOL
+closeButton.addEventListener("click", closeLightbox);
+nextButton.addEventListener("click", nextImage);
+prevButton.addEventListener("click", prevImage);
+
+// KLIK BACKGROUND UNTUK MENUTUP
+lightbox.addEventListener("click", function(event) {
+    if (event.target === lightbox) {
+        closeLightbox();
+    }
+});
+
+// KEYBOARD
+document.addEventListener("keydown", function(event) {
+
+    if (!lightbox.classList.contains("active")) return;
+
+    if (event.key === "Escape") {
+        closeLightbox();
+    }
+
+    if (event.key === "ArrowRight") {
+        nextImage();
+    }
+
+    if (event.key === "ArrowLeft") {
+        prevImage();
+    }
+});
 
 </body>
 </html>
