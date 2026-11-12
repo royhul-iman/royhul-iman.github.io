@@ -41,6 +41,13 @@ header {
     font-weight: 800;
     text-decoration: none;
 }
+/* UKURAN LOGO ROYHUL */
+.logo img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    display: block;
+}
 
 .logo span {
     color: var(--gold);
