@@ -272,7 +272,6 @@ header {
         flex-wrap: wrap;
         justify-content: center;
     }
-
     .navbar ul {
         flex-wrap: wrap;
         justify-content: center;
@@ -290,6 +289,8 @@ header {
     .hero h1 {
         font-size: 38px;
     }
+}
+
 /* NAVBAR LOGO */
 .navbar .logo {
     display: flex;
@@ -298,19 +299,42 @@ header {
 }
 
 .logo img {
-    width: 60px;
-    height: 60px;
+    width: 65px;
+    height: 65px;
     object-fit: contain;
+    display: block;
 }
 
-/* RESPONSIVE HP */
-@media(max-width: 768px) {
+/* RESPONSIVE TABLET DAN HP */
+@media (max-width: 768px) {
+
     .navbar {
         padding: 12px 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
     }
 
     .logo img {
         width: 45px;
         height: 45px;
+    }
+
+    .destination-grid,
+    .page-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 38px;
     }
 }
