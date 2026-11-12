@@ -38,13 +38,13 @@ header {
 .logo {
     color: white;
     font-size: 25px;
-    font-weight: 50;
+    font-weight:800;
     text-decoration: none;
 }
 /* UKURAN LOGO ROYHUL */
 .logo img {
-    width: 60px;
-    height: 60px;
+    width: 65px;
+    height: 65px;
     object-fit: contain;
     display: block;
 }
