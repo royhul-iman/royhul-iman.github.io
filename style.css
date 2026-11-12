@@ -290,4 +290,27 @@ header {
     .hero h1 {
         font-size: 38px;
     }
+/* NAVBAR LOGO */
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+/* RESPONSIVE HP */
+@media(max-width: 768px) {
+    .navbar {
+        padding: 12px 15px;
+    }
+
+    .logo img {
+        width: 45px;
+        height: 45px;
+    }
 }
