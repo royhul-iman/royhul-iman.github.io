@@ -5,155 +5,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Galeri Wisata | ROYHUL</title>
+    <title>ROYHUL | Explore Indonesia</title>
 
-   <link rel="stylesheet" href="galeri.css">
+    <link rel="stylesheet" href="style.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-    
+
 <body>
 
-<!-- HEADER -->
+<!-- NAVBAR -->
 <header>
-    <a href="index.html">← Kembali ke Home</a>
+    <nav class="navbar">
 
-    <h1>Galeri Keindahan Dunia</h1>
+        <a href="#home" class="logo">
+            <img src="https://res.cloudinary.com/p8crkflw/image/upload/v1794449901/royhul_server_pn.png" alt="Logo ROYHUL">
+            <span>ROYHUL</span>
+        </a>
 
-    <p>
-        Jelajahi pesona wisata Indonesia dan Jepang.
-        Temukan keindahan alam dan budaya yang luar biasa.
-    </p>
+        <ul class="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#destinasi">Destinasi</a></li>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#galeri">Galeri</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+
+        <a href="#login" class="login-btn">Login</a>
+
+    </nav>
 </header>
 
 
-<!-- GALLERY -->
-<section class="gallery-section">
+<!-- HERO -->
+<section class="hero" id="home">
 
-    <div class="section-heading">
-        <div class="subtitle">TRAVEL & ADVENTURE</div>
-        <h2>Explore Beautiful Places</h2>
-        <p>Kumpulan destinasi wisata pilihan untuk inspirasi liburanmu.</p>
+    <div class="hero-content">
+
+        <p class="subtitle">EXPLORE THE BEAUTY OF INDONESIA</p>
+
+        <h1>
+            Jelajahi Keindahan
+            <span>Surga Indonesia</span>
+        </h1>
+
+        <p>
+            Temukan keindahan alam, budaya, pantai,
+            pegunungan dan destinasi wisata terbaik
+            bersama ROYHUL Explore Indonesia.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#destinasi" class="btn-primary">
+                Mulai Jelajahi →
+            </a>
+
+            <a href="#about" class="btn-outline">
+                Tentang Kami
+            </a>
+        </div>
+
     </div>
 
+</section>
 
-    <!-- INDONESIA -->
-    <h3 class="category-title">🇮🇩 Keindahan Indonesia</h3>
 
-    <div class="gallery-grid">
+<!-- DESTINASI -->
+<section class="section" id="destinasi">
 
-        <div class="gallery-item">
+    <div class="heading">
+        <p>DESTINASI PILIHAN</p>
+        <h2>Wisata Populer Indonesia</h2>
+        <span>Temukan tempat terbaik untuk liburanmu.</span>
+    </div>
+
+    <div class="destination-grid">
+
+        <div class="card">
             <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=900" alt="Bali">
-            <div class="gallery-info">
-                <span>INDONESIA</span>
+
+            <div class="card-content">
                 <h3>Pulau Bali</h3>
-                <p>Pantai tropis dan keindahan budaya.</p>
+                <p>Pantai indah dan budaya yang mempesona.</p>
+                <a href="https://www.indonesia.travel/" target="_blank" rel="noopener">Jelajahi →</a>
             </div>
         </div>
 
-        <div class="gallery-item">
+        <div class="card">
             <img src="https://images.unsplash.com/photo-1516690561799-46d8f74f9abf?w=900" alt="Raja Ampat">
-            <div class="gallery-info">
-                <span>PAPUA BARAT DAYA</span>
+
+            <div class="card-content">
                 <h3>Raja Ampat</h3>
-                <p>Surga bawah laut Indonesia.</p>
+                <p>Surga bawah laut dengan pemandangan luar biasa.</p>
+                <a href="https://www.indonesia.travel/" target="_blank" rel="noopener">Jelajahi →</a>
             </div>
         </div>
 
-        <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=900" alt="Gunung Bromo">
-            <div class="gallery-info">
-                <span>JAWA TIMUR</span>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=900" alt="Gunung">
+
+            <div class="card-content">
                 <h3>Gunung Bromo</h3>
-                <p>Panorama gunung yang menakjubkan.</p>
-            </div>
-        </div>
-
-        <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?w=900" alt="Wisata alam">
-            <div class="gallery-info">
-                <span>INDONESIA</span>
-                <h3>Pesona Alam</h3>
-                <p>Keindahan alam tropis.</p>
-            </div>
-        </div>
-
-        <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=900" alt="Pantai tropis">
-            <div class="gallery-info">
-                <span>INDONESIA</span>
-                <h3>Pantai Tropis</h3>
-                <p>Menikmati suasana pantai yang indah.</p>
-            </div>
-        </div>
-
-        <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?w=900" alt="Pegunungan">
-            <div class="gallery-info">
-                <span>INDONESIA</span>
-                <h3>Petualangan Alam</h3>
-                <p>Menjelajahi keindahan pegunungan.</p>
-            </div>
-        </div>
-
-    </div>
-
-
-    <!-- JEPANG -->
-    <h3 class="category-title">🇯🇵 Keindahan Jepang</h3>
-
-    <div class="gallery-grid">
-
-        <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=900" alt="Kyoto Jepang">
-            <div class="gallery-info">
-                <span>KYOTO, JAPAN</span>
-                <h3>Kota Kyoto</h3>
-                <p>Keindahan kuil dan budaya tradisional.</p>
-            </div>
-        </div>
-
-        <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=900" alt="Gunung Fuji">
-            <div class="gallery-info">
-                <span>YAMANASHI, JAPAN</span>
-                <h3>Gunung Fuji</h3>
-                <p>Gunung ikonik dengan pemandangan indah.</p>
-            </div>
-        </div>
-
-        <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=900" alt="Tokyo">
-            <div class="gallery-info">
-                <span>TOKYO, JAPAN</span>
-                <h3>Kota Tokyo</h3>
-                <p>Perpaduan teknologi dan budaya modern.</p>
-            </div>
-        </div>
-
-        <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=900" alt="Jepang">
-            <div class="gallery-info">
-                <span>JAPAN</span>
-                <h3>Budaya Jepang</h3>
-                <p>Tradisi dan keindahan arsitektur Jepang.</p>
-            </div>
-        </div>
-
-        <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1522383225653-ed111181a951?w=900" alt="Bunga Sakura">
-            <div class="gallery-info">
-                <span>JAPAN</span>
-                <h3>Bunga Sakura</h3>
-                <p>Pesona musim semi di Jepang.</p>
-            </div>
-        </div>
-
-        <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1503899036084-c55cdd92da26?w=900" alt="Pemandangan Jepang">
-            <div class="gallery-info">
-                <span>JAPAN</span>
-                <h3>Wisata Jepang</h3>
-                <p>Menikmati suasana kota Jepang.</p>
+                <p>Pesona pegunungan dan matahari terbit.</p>
+                <a href="https://www.indonesia.travel/" target="_blank" rel="noopener">Jelajahi →</a>
             </div>
         </div>
 
@@ -162,129 +116,169 @@
 </section>
 
 
+<!-- ABOUT -->
+<section class="about" id="about">
+
+    <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=1000" alt="Pemandangan alam Indonesia">
+    </div>
+
+    <div class="about-content">
+
+        <p class="subtitle">TENTANG KAMI</p>
+
+        <h2>Jelajahi Dunia, Mulai dari Indonesia</h2>
+
+        <p>
+            ROYHUL Explore Indonesia hadir untuk
+            memperkenalkan keindahan alam dan budaya
+            Indonesia. Kami ingin membantu setiap orang
+            menemukan pengalaman wisata yang berkesan.
+        </p>
+
+        <div class="stats">
+
+            <div>
+                <h3>100+</h3>
+                <p>Destinasi</p>
+            </div>
+
+            <div>
+                <h3>50+</h3>
+                <p>Kota Wisata</p>
+            </div>
+
+            <div>
+                <h3>1000+</h3>
+                <p>Pengunjung</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- GALERI -->
+<section class="section gallery" id="galeri">
+
+    <div class="heading">
+        <p>GALERI WISATA</p>
+        <h2>Keindahan Alam Indonesia</h2>
+        <span>Inspirasi perjalanan untuk petualangan berikutnya.</span>
+    </div>
+
+    <div class="gallery-grid">
+
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=900" alt="Wisata alam">
+
+        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=900" alt="Pegunungan">
+
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=900" alt="Pantai">
+
+        <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?w=900" alt="Alam">
+
+    </div>
+
+</section>
+
+
+<!-- LOGIN -->
+<section class="login-section" id="login">
+
+    <div class="login-card">
+
+        <div class="login-logo">
+            <img src="https://res.cloudinary.com/p8crkflw/image/upload/v1794449901/royhul_server_pn.png" alt="Logo ROYHUL">
+        </div>
+
+        <p class="login-subtitle">SELAMAT DATANG</p>
+
+        <h2>Login ROYHUL</h2>
+
+        <p class="login-description">
+            Masuk untuk melanjutkan perjalananmu.
+        </p>
+
+        <form>
+
+            <label for="email">Email</label>
+            <input
+                type="email"
+                id="email"
+                placeholder="Masukkan email"
+                autocomplete="email"
+                required
+            >
+
+            <label for="password">Password</label>
+            <input
+                type="password"
+                id="password"
+                placeholder="Masukkan password"
+                autocomplete="current-password"
+                required
+            >
+
+            <button type="button" class="submit-btn">
+                Masuk Sekarang
+            </button>
+
+        </form>
+
+        <p class="login-note">
+            Belum memiliki akun?
+            <a href="#kontak">Hubungi Kami</a>
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- CTA -->
+<section class="cta" id="kontak">
+
+    <p>WAKTUNYA BERTUALANG</p>
+
+    <h2>Siap Menjelajahi Keindahan Indonesia?</h2>
+
+    <p>Mulai perjalananmu dan temukan pengalaman baru bersama ROYHUL.</p>
+
+    <a href="https://www.indonesia.travel/" target="_blank" rel="noopener" class="btn-primary">
+        Jelajahi Indonesia →
+    </a>
+
+</section>
+
+
 <!-- FOOTER -->
 <footer>
-    <h2>ROYHUL<span>.</span></h2>
-    <p>Explore the World, Discover the Beauty.</p>
-    <p>© 2026 ROYHUL Explore Indonesia & Japan.</p>
+
+    <div class="footer-content">
+
+        <h2>ROYHUL <span>EXPLORE</span></h2>
+
+        <p>
+            Menjelajahi keindahan alam dan budaya Indonesia.
+        </p>
+
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#destinasi">Destinasi</a>
+            <a href="#about">Tentang</a>
+            <a href="#galeri">Galeri</a>
+            <a href="#login">Login</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 ROYHUL Explore Indonesia. All Rights Reserved.
+        </p>
+
+    </div>
+
 </footer>
-
-<!-- LIGHTBOX -->
-<div class="lightbox" id="lightbox">
-
-    <button class="lightbox-close" id="closeLightbox">
-        &times;
-    </button>
-
-    <button class="lightbox-prev" id="prevImage">
-        &#10094;
-    </button>
-
-    <img src="" id="lightboxImage" alt="Foto wisata">
-
-    <button class="lightbox-next" id="nextImage">
-        &#10095;
-    </button>
-
-    <div class="lightbox-caption" id="lightboxCaption"></div>
-
-</div>
-
-<script>
-
-// AMBIL ELEMEN LIGHTBOX
-const lightbox = document.getElementById("lightbox");
-const lightboxImage = document.getElementById("lightboxImage");
-const lightboxCaption = document.getElementById("lightboxCaption");
-
-const closeButton = document.getElementById("closeLightbox");
-const prevButton = document.getElementById("prevImage");
-const nextButton = document.getElementById("nextImage");
-
-// AMBIL SEMUA GAMBAR GALERI
-const galleryImages = document.querySelectorAll(".gallery-item img");
-
-let currentIndex = 0;
-
-// BUKA LIGHTBOX
-function openLightbox(index) {
-    currentIndex = index;
-
-    const selectedImage = galleryImages[currentIndex];
-
-    lightboxImage.src = selectedImage.src;
-    lightboxCaption.textContent = selectedImage.alt;
-
-    lightbox.classList.add("active");
-    document.body.style.overflow = "hidden";
-}
-
-// TUTUP LIGHTBOX
-function closeLightbox() {
-    lightbox.classList.remove("active");
-    document.body.style.overflow = "";
-}
-
-// GAMBAR BERIKUTNYA
-function nextImage() {
-    currentIndex++;
-
-    if (currentIndex >= galleryImages.length) {
-        currentIndex = 0;
-    }
-
-    openLightbox(currentIndex);
-}
-
-// GAMBAR SEBELUMNYA
-function prevImage() {
-    currentIndex--;
-
-    if (currentIndex < 0) {
-        currentIndex = galleryImages.length - 1;
-    }
-
-    openLightbox(currentIndex);
-}
-
-// KLIK GAMBAR GALERI
-galleryImages.forEach((image, index) => {
-    image.addEventListener("click", () => {
-        openLightbox(index);
-    });
-});
-
-// EVENT TOMBOL
-closeButton.addEventListener("click", closeLightbox);
-nextButton.addEventListener("click", nextImage);
-prevButton.addEventListener("click", prevImage);
-
-// KLIK BACKGROUND UNTUK MENUTUP
-lightbox.addEventListener("click", function(event) {
-    if (event.target === lightbox) {
-        closeLightbox();
-    }
-});
-
-// KEYBOARD
-document.addEventListener("keydown", function(event) {
-
-    if (!lightbox.classList.contains("active")) return;
-
-    if (event.key === "Escape") {
-        closeLightbox();
-    }
-
-    if (event.key === "ArrowRight") {
-        nextImage();
-    }
-
-    if (event.key === "ArrowLeft") {
-        prevImage();
-    }
-});
-    
-<script>
 
 </body>
 </html>
