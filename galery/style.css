@@ -1,0 +1,542 @@
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --green: #173b35;
+    --dark: #102a26;
+    --gold: #f9a826;
+    --light: #f4f7f5;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+}
+
+/* NAVBAR */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    background: rgba(16,42,38,.97);
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo {
+    color: white;
+    font-size: 23px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.logo span,
+footer h2 span {
+    color: var(--gold);
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-menu a:hover {
+    color: var(--gold);
+}
+
+.login-btn {
+    background: var(--gold);
+    color: #222;
+    text-decoration: none;
+    padding: 11px 25px;
+    border-radius: 30px;
+    font-weight: 700;
+}
+
+/* HERO */
+.hero {
+    min-height: 100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.7)),
+    url("https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=1920")
+    center/cover no-repeat;
+
+    display: flex;
+    align-items: center;
+    padding: 150px 10%;
+    color: white;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.subtitle {
+    color: var(--gold);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: clamp(40px,6vw,65px);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: var(--gold);
+    display: block;
+}
+
+.hero-content > p:not(.subtitle) {
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* BUTTON */
+.btn-primary,
+.btn-outline {
+    display: inline-block;
+    padding: 13px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: var(--gold);
+    color: #222;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: white;
+    transform: translateY(-3px);
+}
+
+.btn-outline {
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-outline:hover {
+    background: white;
+    color: var(--dark);
+}
+
+/* SECTION */
+.section {
+    padding: 100px 8%;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.heading p {
+    color: #d98d0b;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.heading h2 {
+    color: var(--green);
+    font-size: 34px;
+    margin: 12px 0;
+}
+
+.heading span {
+    color: #777;
+}
+
+/* KATEGORI */
+.category-grid {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.category-btn {
+    padding: 13px 22px;
+    border: 1px solid #dce5df;
+    background: white;
+    color: var(--green);
+    border-radius: 30px;
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.category-btn:hover,
+.category-btn.active {
+    background: var(--green);
+    color: white;
+}
+
+/* STORY */
+.story-section {
+    background: var(--light);
+}
+
+.story-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.story-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px #0001;
+    transition: .3s;
+}
+
+.story-card:hover {
+    transform: translateY(-7px);
+}
+
+.story-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.story-info {
+    padding: 25px;
+}
+
+.tag {
+    display: inline-block;
+    background: #e7f0e9;
+    color: var(--green);
+    padding: 6px 13px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.story-info h3 {
+    color: var(--green);
+    margin: 15px 0 10px;
+}
+
+.story-info p {
+    color: #777;
+    font-size: 13px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.read-btn {
+    background: none;
+    border: none;
+    color: #d98d0b;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* MODAL */
+.story-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.75);
+    z-index: 200;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.story-modal.show {
+    display: flex;
+}
+
+.modal-content {
+    background: white;
+    width: 100%;
+    max-width: 550px;
+    padding: 40px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.modal-content h2 {
+    color: var(--green);
+    margin: 15px 0;
+}
+
+.modal-content > p:not(.subtitle) {
+    line-height: 1.9;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.close-modal {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    border: none;
+    background: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* ABOUT */
+.about {
+    padding: 100px 10%;
+    background: white;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 750px;
+    margin: auto;
+}
+
+.about-content h2 {
+    color: var(--green);
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.about-content > p:not(.subtitle) {
+    color: #777;
+    line-height: 1.9;
+    margin-bottom: 30px;
+}
+
+/* LOGIN */
+.login-section {
+    background: #edf3ef;
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.login-card {
+    background: white;
+    width: 100%;
+    max-width: 430px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 35px #0001;
+    text-align: center;
+}
+
+.login-logo {
+    width: 75px;
+    height: 75px;
+    background: var(--green);
+    color: var(--gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 800;
+    margin: 0 auto 20px;
+}
+
+.login-card h2 {
+    color: var(--green);
+    margin: 10px 0;
+}
+
+.login-description {
+    color: #777;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.login-card form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.login-card label {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--green);
+}
+
+.login-card input {
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-family: inherit;
+    outline: none;
+}
+
+.login-card input:focus {
+    border-color: var(--green);
+}
+
+.submit-btn {
+    padding: 15px;
+    background: var(--green);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-family: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.login-note {
+    color: #888;
+    font-size: 11px;
+    margin-top: 20px;
+}
+
+/* FOOTER */
+footer {
+    background: var(--dark);
+    color: white;
+    text-align: center;
+    padding: 50px 20px 25px;
+}
+
+footer h2 {
+    margin-bottom: 15px;
+}
+
+footer > p {
+    color: #ccc;
+    font-size: 13px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.footer-links a:hover {
+    color: var(--gold);
+}
+
+.copyright {
+    border-top: 1px solid #ffffff25;
+    padding-top: 25px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-menu {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .hero {
+        padding: 150px 7% 80px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .story-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width: 500px) {
+
+    .navbar {
+        padding: 12px;
+    }
+
+    .nav-menu {
+        gap: 10px;
+    }
+
+    .nav-menu a {
+        font-size: 11px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .story-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .heading h2,
+    .about-content h2 {
+        font-size: 27px;
+    }
+
+    .login-card {
+        padding: 25px;
+    }
+
+    .modal-content {
+        padding: 30px 22px;
+    }
+}
