@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>ROYHUL | Explore Indonesia</title>
+    <title>ROYHUL STORY | Dunia Cerita</title>
 
     <link rel="stylesheet" href="style.css">
 
@@ -19,16 +19,14 @@
     <nav class="navbar">
 
         <a href="#home" class="logo">
-            <img src="https://res.cloudinary.com/p8crkflw/image/upload/v1794449901/royhul_server_pn.png" alt="Logo ROYHUL">
-            <span>ROYHUL</span>
+            ROYHUL<span>STORY.</span>
         </a>
 
         <ul class="nav-menu">
             <li><a href="#home">Home</a></li>
-            <li><a href="#destinasi">Destinasi</a></li>
-            <li><a href="#about">Tentang</a></li>
-            <li><a href="#galeri">Galeri</a></li>
-            <li><a href="#kontak">Kontak</a></li>
+            <li><a href="#story">Story</a></li>
+            <li><a href="#kategori">Kategori</a></li>
+            <li><a href="#tentang">Tentang</a></li>
         </ul>
 
         <a href="#login" class="login-btn">Login</a>
@@ -42,27 +40,28 @@
 
     <div class="hero-content">
 
-        <p class="subtitle">EXPLORE THE BEAUTY OF INDONESIA</p>
+        <p class="subtitle">WELCOME TO ROYHUL STORY</p>
 
         <h1>
-            Jelajahi Keindahan
-            <span>Surga Indonesia</span>
+            Temukan Dunia
+            <span>Dalam Sebuah Cerita</span>
         </h1>
 
         <p>
-            Temukan keindahan alam, budaya, pantai,
-            pegunungan dan destinasi wisata terbaik
-            bersama ROYHUL Explore Indonesia.
+            Jelajahi berbagai cerita menarik, petualangan,
+            inspirasi dan pengalaman baru hanya di ROYHUL STORY.
         </p>
 
         <div class="hero-buttons">
-            <a href="#destinasi" class="btn-primary">
-                Mulai Jelajahi →
+
+            <a href="#story" class="btn-primary">
+                Mulai Membaca →
             </a>
 
-            <a href="#about" class="btn-outline">
-                Tentang Kami
+            <a href="#kategori" class="btn-outline">
+                Pilih Kategori
             </a>
+
         </div>
 
     </div>
@@ -70,44 +69,120 @@
 </section>
 
 
-<!-- DESTINASI -->
-<section class="section" id="destinasi">
+<!-- KATEGORI -->
+<section class="section" id="kategori">
 
     <div class="heading">
-        <p>DESTINASI PILIHAN</p>
-        <h2>Wisata Populer Indonesia</h2>
-        <span>Temukan tempat terbaik untuk liburanmu.</span>
+        <p>PILIH CERITAMU</p>
+        <h2>Kategori Cerita</h2>
+        <span>Pilih jenis cerita yang kamu sukai.</span>
     </div>
 
-    <div class="destination-grid">
+    <div class="category-grid">
 
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=900" alt="Bali">
+        <button class="category-btn active" data-category="Semua">
+            Semua Cerita
+        </button>
 
-            <div class="card-content">
-                <h3>Pulau Bali</h3>
-                <p>Pantai indah dan budaya yang mempesona.</p>
-                <a href="https://www.indonesia.travel/" target="_blank" rel="noopener">Jelajahi →</a>
+        <button class="category-btn" data-category="Petualangan">
+            🏔 Petualangan
+        </button>
+
+        <button class="category-btn" data-category="Horor">
+            👻 Horor
+        </button>
+
+        <button class="category-btn" data-category="Romantis">
+            ❤️ Romantis
+        </button>
+
+        <button class="category-btn" data-category="Inspirasi">
+            ✨ Inspirasi
+        </button>
+
+        <button class="category-btn" data-category="Fantasi">
+            🐉 Fantasi
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- STORY -->
+<section class="section story-section" id="story">
+
+    <div class="heading">
+        <p>KOLEKSI PILIHAN</p>
+        <h2>Temukan Cerita Terbaik</h2>
+        <span>Kumpulan cerita menarik untuk menemani waktumu.</span>
+    </div>
+
+    <div class="story-grid">
+
+        <div class="story-card" data-category="Petualangan">
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800" alt="Petualangan Gunung">
+
+            <div class="story-info">
+                <span class="tag">Petualangan</span>
+                <h3>Perjalanan Menuju Puncak</h3>
+                <p>Kisah perjalanan seorang pemuda mengejar impiannya di pegunungan.</p>
+                <button class="read-btn" data-title="Perjalanan Menuju Puncak" data-text="Seorang pemuda memulai perjalanan menuju puncak gunung. Dalam perjalanan itu, ia belajar tentang keberanian, persahabatan, dan arti pantang menyerah.">Baca Cerita →</button>
             </div>
         </div>
 
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1516690561799-46d8f74f9abf?w=900" alt="Raja Ampat">
+        <div class="story-card" data-category="Horor">
+            <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=800" alt="Hutan Misterius">
 
-            <div class="card-content">
-                <h3>Raja Ampat</h3>
-                <p>Surga bawah laut dengan pemandangan luar biasa.</p>
-                <a href="https://www.indonesia.travel/" target="_blank" rel="noopener">Jelajahi →</a>
+            <div class="story-info">
+                <span class="tag">Horor</span>
+                <h3>Misteri Hutan Malam</h3>
+                <p>Sebuah kisah misteri tentang hutan yang menyimpan rahasia.</p>
+                <button class="read-btn" data-title="Misteri Hutan Malam" data-text="Di sebuah desa terdapat hutan yang jarang dikunjungi. Suatu hari, seorang penjelajah menemukan sebuah jalan lama yang mengarah ke tempat penuh misteri.">Baca Cerita →</button>
             </div>
         </div>
 
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=900" alt="Gunung">
+        <div class="story-card" data-category="Romantis">
+            <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800" alt="Romantis">
 
-            <div class="card-content">
-                <h3>Gunung Bromo</h3>
-                <p>Pesona pegunungan dan matahari terbit.</p>
-                <a href="https://www.indonesia.travel/" target="_blank" rel="noopener">Jelajahi →</a>
+            <div class="story-info">
+                <span class="tag">Romantis</span>
+                <h3>Senja dan Kenangan</h3>
+                <p>Cerita tentang kenangan indah yang tersimpan di sebuah senja.</p>
+                <button class="read-btn" data-title="Senja dan Kenangan" data-text="Setiap sore, seorang penulis duduk menikmati senja sambil mengingat perjalanan hidupnya dan orang-orang yang pernah memberikan warna dalam hidupnya.">Baca Cerita →</button>
+            </div>
+        </div>
+
+        <div class="story-card" data-category="Inspirasi">
+            <img src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?w=800" alt="Inspirasi">
+
+            <div class="story-info">
+                <span class="tag">Inspirasi</span>
+                <h3>Langkah Menuju Sukses</h3>
+                <p>Kisah seseorang yang tidak pernah menyerah dalam meraih cita-cita.</p>
+                <button class="read-btn" data-title="Langkah Menuju Sukses" data-text="Kesuksesan tidak datang dalam satu malam. Dengan belajar, berusaha, dan terus berkembang, seseorang dapat melangkah menuju cita-citanya.">Baca Cerita →</button>
+            </div>
+        </div>
+
+        <div class="story-card" data-category="Fantasi">
+            <img src="https://images.unsplash.com/photo-1518709594023-6eab9bab7b23?w=800" alt="Fantasi">
+
+            <div class="story-info">
+                <span class="tag">Fantasi</span>
+                <h3>Kerajaan Langit</h3>
+                <p>Petualangan menuju kerajaan misterius di atas awan.</p>
+                <button class="read-btn" data-title="Kerajaan Langit" data-text="Di balik awan terdapat sebuah kerajaan yang hanya bisa ditemukan oleh orang-orang yang memiliki keberanian dan rasa ingin tahu.">Baca Cerita →</button>
+            </div>
+        </div>
+
+        <div class="story-card" data-category="Petualangan">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800" alt="Alam">
+
+            <div class="story-info">
+                <span class="tag">Petualangan</span>
+                <h3>Rahasia Pulau Terpencil</h3>
+                <p>Petualangan menjelajahi pulau dengan keindahan alam luar biasa.</p>
+                <button class="read-btn" data-title="Rahasia Pulau Terpencil" data-text="Sekelompok penjelajah menemukan pulau yang belum pernah mereka kunjungi. Mereka menemukan keindahan alam dan berbagai kejutan selama perjalanan.">Baca Cerita →</button>
             </div>
         </div>
 
@@ -116,68 +191,47 @@
 </section>
 
 
-<!-- ABOUT -->
-<section class="about" id="about">
+<!-- MODAL BACA CERITA -->
+<div class="story-modal" id="storyModal">
 
-    <div class="about-image">
-        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=1000" alt="Pemandangan alam Indonesia">
+    <div class="modal-content">
+
+        <button class="close-modal" id="closeModal">×</button>
+
+        <p class="subtitle">ROYHUL STORY</p>
+
+        <h2 id="modalTitle">Judul Cerita</h2>
+
+        <p id="modalText"></p>
+
+        <button class="btn-primary" id="finishReading">
+            Selesai Membaca
+        </button>
+
     </div>
+
+</div>
+
+
+<!-- TENTANG -->
+<section class="about" id="tentang">
 
     <div class="about-content">
 
-        <p class="subtitle">TENTANG KAMI</p>
+        <p class="subtitle">ABOUT ROYHUL STORY</p>
 
-        <h2>Jelajahi Dunia, Mulai dari Indonesia</h2>
+        <h2>Setiap Cerita Memiliki Makna</h2>
 
         <p>
-            ROYHUL Explore Indonesia hadir untuk
-            memperkenalkan keindahan alam dan budaya
-            Indonesia. Kami ingin membantu setiap orang
-            menemukan pengalaman wisata yang berkesan.
+            ROYHUL STORY merupakan tempat untuk menemukan
+            berbagai kisah menarik. Mulai dari petualangan,
+            inspirasi, fantasi hingga cerita kehidupan.
+            Temukan pengalaman membaca yang menyenangkan.
         </p>
 
-        <div class="stats">
-
-            <div>
-                <h3>100+</h3>
-                <p>Destinasi</p>
-            </div>
-
-            <div>
-                <h3>50+</h3>
-                <p>Kota Wisata</p>
-            </div>
-
-            <div>
-                <h3>1000+</h3>
-                <p>Pengunjung</p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- GALERI -->
-<section class="section gallery" id="galeri">
-
-    <div class="heading">
-        <p>GALERI WISATA</p>
-        <h2>Keindahan Alam Indonesia</h2>
-        <span>Inspirasi perjalanan untuk petualangan berikutnya.</span>
-    </div>
-
-    <div class="gallery-grid">
-
-        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=900" alt="Wisata alam">
-
-        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=900" alt="Pegunungan">
-
-        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=900" alt="Pantai">
-
-        <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?w=900" alt="Alam">
+        <a href="#story" class="btn-primary">
+            Lihat Semua Cerita →
+        </a>
 
     </div>
 
@@ -189,66 +243,45 @@
 
     <div class="login-card">
 
-        <div class="login-logo">
-            <img src="https://res.cloudinary.com/p8crkflw/image/upload/v1794449901/royhul_server_pn.png" alt="Logo ROYHUL">
-        </div>
+        <div class="login-logo">R</div>
 
-        <p class="login-subtitle">SELAMAT DATANG</p>
+        <p class="subtitle">WELCOME BACK</p>
 
         <h2>Login ROYHUL</h2>
 
         <p class="login-description">
-            Masuk untuk melanjutkan perjalananmu.
+            Masuk dan nikmati berbagai cerita menarik.
         </p>
 
-        <form>
+        <form id="loginForm">
 
-            <label for="email">Email</label>
+            <label>Email</label>
+
             <input
                 type="email"
-                id="email"
                 placeholder="Masukkan email"
-                autocomplete="email"
                 required
             >
 
-            <label for="password">Password</label>
+            <label>Password</label>
+
             <input
                 type="password"
-                id="password"
                 placeholder="Masukkan password"
-                autocomplete="current-password"
                 required
             >
 
-            <button type="button" class="submit-btn">
-                Masuk Sekarang
+            <button type="submit" class="submit-btn">
+                Login Sekarang →
             </button>
 
         </form>
 
         <p class="login-note">
-            Belum memiliki akun?
-            <a href="#kontak">Hubungi Kami</a>
+            Login ini masih berupa tampilan demo.
         </p>
 
     </div>
-
-</section>
-
-
-<!-- CTA -->
-<section class="cta" id="kontak">
-
-    <p>WAKTUNYA BERTUALANG</p>
-
-    <h2>Siap Menjelajahi Keindahan Indonesia?</h2>
-
-    <p>Mulai perjalananmu dan temukan pengalaman baru bersama ROYHUL.</p>
-
-    <a href="https://www.indonesia.travel/" target="_blank" rel="noopener" class="btn-primary">
-        Jelajahi Indonesia →
-    </a>
 
 </section>
 
@@ -256,29 +289,93 @@
 <!-- FOOTER -->
 <footer>
 
-    <div class="footer-content">
+    <h2>ROYHUL<span>STORY.</span></h2>
 
-        <h2>ROYHUL <span>EXPLORE</span></h2>
+    <p>Temukan cerita, temukan pengalaman baru.</p>
 
-        <p>
-            Menjelajahi keindahan alam dan budaya Indonesia.
-        </p>
-
-        <div class="footer-links">
-            <a href="#home">Home</a>
-            <a href="#destinasi">Destinasi</a>
-            <a href="#about">Tentang</a>
-            <a href="#galeri">Galeri</a>
-            <a href="#login">Login</a>
-        </div>
-
-        <p class="copyright">
-            © 2026 ROYHUL Explore Indonesia. All Rights Reserved.
-        </p>
-
+    <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#story">Story</a>
+        <a href="#kategori">Kategori</a>
+        <a href="#login">Login</a>
     </div>
 
+    <p class="copyright">
+        © 2026 ROYHUL STORY. All Rights Reserved.
+    </p>
+
 </footer>
+
+
+<!-- JAVASCRIPT -->
+<script>
+
+// FILTER KATEGORI
+const categoryButtons = document.querySelectorAll(".category-btn");
+const storyCards = document.querySelectorAll(".story-card");
+
+categoryButtons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        categoryButtons.forEach(btn => btn.classList.remove("active"));
+
+        button.classList.add("active");
+
+        const selected = button.dataset.category;
+
+        storyCards.forEach(card => {
+
+            if (selected === "Semua" || card.dataset.category === selected) {
+                card.style.display = "block";
+            } else {
+                card.style.display = "none";
+            }
+
+        });
+
+    });
+
+});
+
+
+// BACA CERITA
+const modal = document.getElementById("storyModal");
+const modalTitle = document.getElementById("modalTitle");
+const modalText = document.getElementById("modalText");
+
+document.querySelectorAll(".read-btn").forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        modalTitle.textContent = button.dataset.title;
+        modalText.textContent = button.dataset.text;
+
+        modal.classList.add("show");
+
+    });
+
+});
+
+document.getElementById("closeModal").onclick = () => {
+    modal.classList.remove("show");
+};
+
+document.getElementById("finishReading").onclick = () => {
+    modal.classList.remove("show");
+};
+
+
+// LOGIN DEMO
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    alert("Ini masih halaman login demo. Hubungkan autentikasi untuk login sungguhan.");
+
+});
+
+</script>
 
 </body>
 </html>
