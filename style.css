@@ -338,3 +338,42 @@ header {
         font-size: 38px;
     }
 }
+/* BAGIAN KONTAK */
+.contact {
+    padding: 90px 8%;
+    background: #102a26;
+    text-align: center;
+    color: white;
+}
+
+.contact-content {
+    max-width: 700px;
+    margin: auto;
+}
+
+.contact h2 {
+    font-size: 36px;
+    color: #f9a826;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.contact-btn {
+    display: inline-block;
+    background: #f9a826;
+    color: #222;
+    padding: 14px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.contact-btn:hover {
+    background: white;
+    }
+
+}
